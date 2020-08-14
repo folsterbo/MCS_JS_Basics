@@ -8,13 +8,13 @@ let player = parseInt(prompt('Your choice: 0 - rock, 1 - scissors, 2 - paper'));
 let computer = Math.floor(Math.random() * 3);
 console.log(player,computer);
 // опишем все условия и будем выводить в консоль 'computer win' или 'player win'
-let playerWin = player - computer;
-//console.log(playerWin);
+let score = player - computer;
+//console.log(score);
 
 
-if (playerWin == 0) {
+if (score == 0) {
   console.log('draw game');  
-} else if (playerWin == -1 || playerWin == 2) {
+} else if (score == -1 || score == 2) {
   console.log('player win');
 } else {
   console.log('computer win');  
