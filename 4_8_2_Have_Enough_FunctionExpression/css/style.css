@@ -1,0 +1,5 @@
+@import url(reset.css);
+body{
+	background-image: url(https://bostonglobe-prod.cdn.arcpublishing.com/resizer/pbich9829abjcw6k2feVzCtoi2o=/1440x0/arc-anglerfish-arc2-prod-bostonglobe.s3.amazonaws.com/public/W4Q56RRAYJAYZEFYCLHCUET7HY.jpg);
+	background-size: cover;
+}
