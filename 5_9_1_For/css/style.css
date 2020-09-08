@@ -1,0 +1,13 @@
+@import url(reset.css);
+body{
+	background: pink;
+	font-size: 10px;
+}
+div{
+ width: 1000px;
+ margin: auto;
+}
+p{
+	text-align: center;
+	font-size: 1.3rem;
+}
