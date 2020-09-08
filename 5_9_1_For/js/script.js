@@ -3,8 +3,8 @@ let myArr = [];
 
 for (let i=1; i<100000; i++) {
   if (i%6 == 0) {
-    myArr.push(i+'\n');
+    myArr.push(i);
   }
 }
 
-myP.innerHTML = myArr;
+myP.innerHTML = myArr.join(', ');
