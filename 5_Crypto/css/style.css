@@ -1,0 +1,23 @@
+@import url(reset.css);
+*{
+	box-sizing: border-box;
+}
+html{
+	font-size: 10px;
+}
+body{
+	font-size: 2rem;
+	line-height: 2.3rem;
+	font-family: Helvetica;
+}
+.main{
+	max-width: 1440px;
+	margin: auto;
+}
+.color{
+	height: 30px;
+	background-color: red;
+}
+.Bitcoin,.Ethereum,.Litecoin{
+	padding: 2rem;
+}
