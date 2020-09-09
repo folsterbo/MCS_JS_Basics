@@ -1,5 +1,6 @@
 let myPforEach = document.querySelector('.forEach');
 let myPfilter = document.querySelector('.filter');
+let myPmap = document.querySelector('.map');
 let myArr = [];
 let myNewArr = [];
 
@@ -23,3 +24,16 @@ let myFilterArr = myArr.filter(function (i) {
 })
 //вывожу myFilterArr
 myPfilter.innerHTML = myFilterArr.join(', ');
+
+//метод map
+let myMapArr = myArr.map(function (i) {
+if (i%6 == 0) {
+  return i
+}
+})
+//фильтрую элементы массива myMapArr
+let myMapArr1 = myMapArr.filter(function (i) {
+  return i != undefined
+})
+//вывожу myMapArr
+myPmap.innerHTML = myMapArr1.join(', ');
