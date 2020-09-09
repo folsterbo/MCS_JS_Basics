@@ -1,0 +1,17 @@
+@import url(reset.css);
+body{
+	font-size: 10px;
+}
+div{
+ width: 1000px;
+ margin: auto;
+}
+p{
+	text-align: center;
+}
+.forEach{
+	background: lightblue;
+}
+.filter{
+	background: lightgreen;
+}
