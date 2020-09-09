@@ -95,3 +95,6 @@ input[type="submit"] {
 	color: var(--main-tx-color);
 	opacity: 0.4;
 }
+input:focus {
+	outline: none;
+}
