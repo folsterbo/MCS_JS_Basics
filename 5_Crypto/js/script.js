@@ -21,10 +21,26 @@ let colors = document.querySelectorAll('.color')
 for (let i = 0; i < names.length; i++) {
     names[i].innerHTML=crypto[i].name;
     prices[i].innerHTML=crypto[i].price;
-    colors[i].style.width = `${(crypto[i].price)/2}px`;
 }
 //созданние массива с пользовательскими цветами и изменение существующих стилей 
 let myColors = ['#cdea7a','#c6b9ff','#f8bfc7']
 for (let j = 0; j < colors.length; j++) {
   colors[j].style.backgroundColor = myColors[j];
+}
+//определяем самую дорогую криптовалюту
+function compare(a, b) {
+  if (a < b) return 1; 
+  if (a == b) return 0; 
+  if (a > b) return -1; 
+}
+
+let priceArr = [];
+for (let i = 0; i < crypto.length; i++) {
+  priceArr.push(crypto[i].price);
+} 
+
+priceArr.sort(compare);
+//задаем графику самой дорогой валюты 100% ширины
+for (let i = 0; i < crypto.length; i++) {
+  colors[i].style.width = `${crypto[i].price/priceArr[0]*100}%`;
 }
