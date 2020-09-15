@@ -41,6 +41,13 @@ body{
 	margin: auto;
 	padding: 3rem;
 }
+.temperature{
+	font-size: 4rem;
+	padding-bottom: 1rem;
+}
+p{
+	padding-bottom: 0.5rem;
+}
 .action{
 	width: 30%;
 	min-width: min-content;
